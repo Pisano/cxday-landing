@@ -90,6 +90,16 @@
         margin: auto;
         background: black;
         box-sizing: border-box;
+        font-size: 24px;
+      }
+
+      nav a {
+        height: 47px;
+        line-height: 47px;
+        text-decoration: none;
+        display: inline-block;
+        margin-left: 15px;
+        color: white;
       }
 
       section#date p {
@@ -109,9 +119,40 @@
         padding: 20px;
       }
 
+      section#sponsors,
       section#speakers,
       section#about {
         background: white;
+        padding-bottom: 40px;
+      }
+
+      section#register {
+        background: url('/assets/pink.png');
+        background-size: 87px auto;
+        text-align: center;
+        padding-bottom: 40px;
+      }
+
+      section#register h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 56px;
+      }
+
+      section#register button {
+        height: 92px;
+        border: 2px solid white;
+        border-radius: 46px;
+        font-size: 36px;
+        color: white;
+        padding: 0 50px;
+        background: #E82E81;
+      }
+
+      section#register p {
+        color: white;
+        font-size: 36px;
+        line-height: 1.4
       }
 
       h2.underline {
@@ -136,9 +177,10 @@
       p.indent {
         margin: 0;
         color: #626A90;
-        font-size: 32px;
+        font-size: 36px;
         padding-left: 170px;
         padding-top: 10px;
+        padding-bottom: 40px;
         line-height: 1.4
       }
 
@@ -146,6 +188,42 @@
         display: block;
         width: 100%;
         height: auto;
+      }
+
+      section#sponsors {
+        text-align: center;
+        padding-top: 40px;
+      }
+
+      .sponsor-card {
+        color: #E82E81;
+        font-size: 24px;
+        padding: 20px;
+        font-weight: bold;
+      }
+
+      .sponsor-card .sponsor-label {
+        margin-bottom: 20px;
+      }
+
+      section#sponsors .become {
+        border-radius: 20px;
+        max-width: 500px;
+        padding: 40px;
+        margin: auto;
+        background: url('/assets/black.png');
+        background-size: 87px auto;
+      }
+
+      section#sponsors .become button {
+        margin-top: 30px;
+        height: 70px;
+        border: none;
+        border-radius: 46px;
+        font-size: 24px;
+        color: white;
+        padding: 0 30px;
+        background: #E82E81;
       }
 
       .speaker-container {
@@ -183,12 +261,114 @@
         font-weight: bold;
       }
 
+      section#venue {
+        position: relative;
+      }
+
+      section#venue .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgba(0,0,0,0.5);
+        text-align: center;
+        padding: 10px 0;
+      }
+
+      section#venue h2 {
+        color: white;
+        margin: 0;
+        font-weight: bold;
+        font-size: 56px;
+      }
+
+      section#venue p {
+        margin: 0;
+        color: white;
+        font-size: 24px;
+      }
+
+      section#venue a {
+        display: inline-block;
+        margin-top: 10px;
+        height: 70px;
+        text-decoration: none;
+        line-height: 70px;
+        border: 2px solid #E82E81;
+        border-radius: 46px;
+        font-size: 24px;
+        color: white;
+        padding: 0 30px;
+        background: transparent;
+      }
+
+      footer {
+        background: #2E81E8;
+        color: white;
+        font-size: 24px;
+      }
+
+      footer .info {
+        text-align: center;
+        padding: 80px 0 10px 0;
+        position: relative;
+        z-index: 10;
+      }
+
+      footer .info h2 {
+        color: white;
+        font-weight: bold;
+        font-size: 56px;
+        margin: 10px;
+      }
+
+      footer .info p {
+        color: white;
+        font-size: 36px;
+        line-height: 1.4;
+        margin: 10px;
+      }
+
+      footer .responsive {
+        position: absolute;
+      }
+
+      footer .info a {
+        display: inline-block;
+        margin-top: 10px;
+        height: 70px;
+        text-decoration: none;
+        line-height: 70px;
+        border: 2px solid white;
+        border-radius: 46px;
+        font-size: 24px;
+        color: white;
+        padding: 0 30px;
+        background: transparent;
+      }
+
+      //section#register button {
+      //  height: 92px;
+      //  border: 2px solid white;
+      //  border-radius: 46px;
+      //  font-size: 36px;
+      //  color: white;
+      //  padding: 0 50px;
+      //  background: #E82E81;
+      //}
+
+      span.right {
+        float: right;
+      }
     </style>
   </head>
 
   <body>
     <nav class="max-width">
       <img src="/assets/pisano_logo.png" title="Pisano" height="47">
+      <span class="right">
+        <a href="#about">Hakkında</a> <a href="#speakers">Konuşmacılar</a> <a href="#register">Kayıt</a> <a href="#sponsors">Sponsorluk</a>
+      </span>
     </nav>
 
     <header>
@@ -213,14 +393,24 @@
 
     <section id="about">
       <div class="max-width">
-        <h2 class="underline">CDX Hakkında</h2>
+        <h2 class="underline">Customer Experience Day Hakkında</h2>
         <p class="indent">
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
         </p>
       </div>
     </section>
 
-    <img src="/assets/wyndham_grand_istanbul_levent.png" class="responsive">
+    <section id="venue">
+      <div class="info">
+        <div class="max-width">
+          <p>Etkinlik Yeri</p>
+          <h2>Wyndham Grand Istanbul Levent</h2>
+          <a href="https://google.com" target="_blank" title="Wyndham Grand Istanbul Levent Google Maps">Haritada Göster →</a>
+        </div>
+      </div>
+
+      <img src="/assets/wyndham_grand_istanbul_levent.png" class="responsive">
+    </section>
 
     <section id="speakers">
       <div class="max-width">
@@ -252,7 +442,43 @@
       </div>
     </section>
 
+    <section id="register">
+      <div class="max-width">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+        <button type="button">Ücretsiz Kayıt</button>
+      </div>
+    </section>
+
+    <section id="sponsors">
+      <div class="max-width">
+        <div class="become">
+          <img src="/assets/cxd_logo.png" title="CXD 2018" width="382">
+          <button type="button">Sponsorluk Hakkında</button>
+        </div>
+
+        <!--
+        <div class="sponsor-card">
+          <div class="sponsor-label">Media Partner</div>
+          <img src="/assets/cxpa_logo.png" width="200">
+        </div>
+        -->
+      </div>
+    </section>
+
     <footer>
+      <img src="/assets/foot_bg.png" class="responsive">
+
+      <div class="info max-width">
+        <img src="/assets/pisano_small_logo.png" width="100">
+        <h2>Lorem ipsum dolor sit amet</h2>
+        <p>Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.</p>
+        <a href="https://www.pisano.co/tr" target="_blank">Daha Fazla Bilgi →</a>
+      </div>
+
+      <div class="max-width">
+        © 2018 Pisano Limited<span class="right">info@pisano.co</span>
+      </div>
     </footer>
   </body>
 </html>
