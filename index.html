@@ -206,9 +206,13 @@
 
       .sponsor-card {
         color: #E82E81;
-        font-size: 2.4rem;
-        padding: 2.0rem;
+        font-size: 3.6rem;
+        padding-bottom: 4.0rem;
         font-weight: bold;
+      }
+
+      .sponsor-card img {
+        max-width: 100%;
       }
 
       .sponsor-card .sponsor-label {
@@ -222,6 +226,12 @@
         margin: auto;
         background: url('/assets/black.png');
         background-size: 87px auto;
+      }
+
+      section#sponsors .become img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
       }
 
       section#sponsors .become button {
@@ -248,11 +258,28 @@
         display: inline-block;
       }
 
-      .speaker-container img {
-        image-rendering: pixelated;
+      .speaker-container .speaker {
         margin: 1.0rem 0;
         width: 22.0rem;
         display: inline-block;
+        vertical-align: top;
+        text-align: center;
+      }
+
+      .speaker-container .speaker h3 {
+        font-size: 3rem;
+        color: #E82E81;
+      }
+
+      .speaker-container .speaker p {
+        font-size: 2rem;
+        color: #626A90;
+        margin-bottom: 0;
+      }
+
+      .speaker-container .speaker img {
+        width: 100%;
+        border: 3px dashed #2E81E8;
       }
 
       .speaker-container .overlay {
@@ -449,9 +476,18 @@
           bottom: 0;
       }
 
-      .speaker-container img {
+      .speaker-container .speaker h3 {
+        font-size: 1.8rem;
+      }
+
+      .speaker-container .speaker p {
+        font-size: 1.2rem;
+      }
+
+      .speaker-container .speaker {
           width: 13rem;
       }
+
       .speaker-container .overlay {
           font-size: 3rem;
       }
@@ -475,6 +511,14 @@
           line-height: 4rem;
           border-radius: 4rem;
           font-size: 1.8rem;
+      }
+
+      .sponsor-card {
+        font-size: 2rem;
+      }
+
+      .sponsor-card .sponsor-label {
+        margin-bottom: 1.8rem;
       }
 
       section#sponsors .become img {
@@ -637,27 +681,58 @@
       <div class="max-width">
         <h2 class="underline">Konuşmacılar</h2>
         <div class="speaker-container">
-          <div class="overlay">Çok Yakında Açıklanacak</div>
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
+          <div class="speaker">
+            <h3>Gresi Sanje</h3>
+            <img src="/assets/gsanje.png">
+            <p>Associate Prof, Brand Communication Management/Director Markaokulu, İstanbul Bilgi University</p>
+          </div>
+          <div class="speaker">
+            <h3>Mustafa Dalcı</h3>
+            <img src="/assets/mdalci.png">
+            <p>Userspots Founder</p>
+          </div>
+          <div class="speaker">
+            <h3>Sinem Yüksel</h3>
+            <img src="/assets/syuksel.png">
+            <p>Customer Experience Director at Turkcell</p>
+          </div>
+          <div class="speaker">
+            <h3>Gökhan Kara</h3>
+            <img src="/assets/gkara.png">
+            <p>CX Manager at Enerjisa</p>
+          </div>
         </div>
 
         <div class="speaker-container">
           <div class="overlay">Ağustos'ta Açıklanacak</div>
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
         </div>
 
         <div class="speaker-container">
           <div class="overlay">Eylül'de Açıklanacak</div>
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
-          <img src="/assets/profile.png">
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
+          <div class="speaker">
+            <img src="/assets/profile.png">
+          </div>
         </div>
 
       </div>
@@ -679,17 +754,15 @@
 
     <section id="sponsors">
       <div class="max-width">
+        <div class="sponsor-card">
+          <div class="sponsor-label">Medya Partneri</div>
+          <a target="_blank" href="https://www.cxpa.org/home"><img src="/assets/cxpa_logo.png" width="400"></a>
+        </div>
+
         <div class="become">
           <img src="/assets/cxd_logo.png" title="CXD 2018" width="382">
           <button id="sponsorshipBtn" type="button">Sponsor Olun</button>
         </div>
-
-        <!--
-        <div class="sponsor-card">
-          <div class="sponsor-label">Media Partner</div>
-          <img src="/assets/cxpa_logo.png" width="200">
-        </div>
-        -->
       </div>
     </section>
 
