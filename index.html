@@ -39,603 +39,579 @@
     <!-- Style -->
     <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:400,900" rel="stylesheet"/>
 
-    <style type="text/css">
-      html {
-        font-size: 62.5%;
-        margin: 0;
-        padding: 0;
-      }
+    <style>
+    html {
+      font-size: 62.5%;
+      margin: 0;
+      padding: 0;
+    }
 
-      body {
-        font-family: 'Libre Franklin', sans-serif;
-        background: #0A0A0B;
-        margin: 0;
-        padding: 0;
-      }
+    body {
+      font-family: 'Libre Franklin', sans-serif;
+      background: #0A0A0B;
+      margin: 0;
+      padding: 0;
+    }
 
-      header {
-        background: url('/assets/black.png');
-        background-size: 87px auto;
-        text-align: center;
-      }
+    header {
+      background: url('/assets/black.png');
+      background-size: 87px auto;
+      text-align: center;
+    }
 
-      header .top-container {
-        background: #0A0A0B;
-      }
+    header .top-container {
+      background: #0A0A0B;
+    }
 
-      header .bottom-container {
-        background: url(/assets/head_bg.png);
-        padding: 4.0rem;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position-y: top;
-        height: 30vw;
-      }
+    header .bottom-container {
+      background: url(/assets/head_bg.png);
+      padding: 4.0rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position-y: top;
+      height: 30vw;
+    }
 
-      header h1 {
-        color: #E82E81;
-        font-size: 9.6rem;
-        margin-bottom: 0;
-        padding: 0 4.0rem;
-        font-weight: bold;
-      }
+    header h1 {
+      color: #E82E81;
+      font-size: 9.6rem;
+      margin-bottom: 0;
+      padding: 0 4.0rem;
+      font-weight: bold;
+    }
 
-      header p {
-        margin-top: 0;
-        color: white;
-        padding: 0 4.0rem;
-        font-size: 3.6rem;
-      }
+    header p {
+      margin-top: 0;
+      color: white;
+      padding: 0 4.0rem;
+      font-size: 3.6rem;
+    }
 
-      nav {
-        margin: auto;
-        background: #0a0a0b;
-        box-sizing: border-box;
-        font-size: 2.4rem;
-      }
+    nav {
+      margin: auto;
+      background: #0a0a0b;
+      box-sizing: border-box;
+      font-size: 2.4rem;
+    }
 
-      nav a {
-        height: 4.7rem;
-        line-height: 4.7rem;
-        text-decoration: none;
-        display: inline-block;
-        margin-left: 1.5rem;
-        color: white;
-      }
+    nav a {
+      height: 4.7rem;
+      line-height: 4.7rem;
+      text-decoration: none;
+      display: inline-block;
+      margin-left: 1.5rem;
+      color: white;
+    }
 
-      section#date p {
-        font-size: 9.6rem;
-        color: #2E81E8;
-        text-align: center;
-        padding: 5.0rem;
-        background: white;
-        margin: 0;
-        font-weight: bold;
-      }
+    section#date p {
+      font-size: 9.6rem;
+      color: #2E81E8;
+      text-align: center;
+      padding: 5.0rem;
+      background: white;
+      margin: 0;
+      font-weight: bold;
+    }
 
-      .max-width {
-        max-width: 120.0rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2.0rem;
-      }
+    .max-width {
+      max-width: 120.0rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.0rem;
+    }
 
-      .max-width-small {
-        max-width: 90.0rem;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 2.0rem;
-      }
+    .max-width-small {
+      max-width: 90.0rem;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.0rem;
+    }
 
-      section#sponsors,
-      section#speakers,
-      section#about {
-        background: white;
-        padding-bottom: 4.0rem;
-      }
+    section#sponsors,
+    section#speakers,
+    section#about {
+      background: white;
+      padding-bottom: 4.0rem;
+    }
 
-      section#register {
-        background: url('/assets/pink.png');
-        background-size: 87px auto;
-        text-align: center;
-        padding-bottom: 4.0rem;
-      }
+    section#register {
+      background: url('/assets/pink.png');
+      background-size: 87px auto;
+      text-align: center;
+      padding-bottom: 4.0rem;
+    }
 
-      section#register h2 {
-        color: white;
-        font-weight: bold;
-        font-size: 5.6rem;
-      }
+    section#register h2 {
+      color: white;
+      font-weight: bold;
+      font-size: 5.6rem;
+    }
 
-      section#register button {
-        cursor: pointer;
-        height: 9.2rem;
-        border: 0.2rem solid white;
-        border-radius: 4.6rem;
-        font-size: 3.6rem;
-        color: white;
-        padding: 0 5.0rem;
-        background: #E82E81;
-      }
+    .register-button {
+      cursor: pointer;
+      height: 9.2rem;
+      border: 0.2rem solid white;
+      border-radius: 4.6rem;
+      font-size: 3.6rem;
+      color: white;
+      padding: 0 5.0rem;
+      background: #E82E81;
+    }
 
-      section#register p {
-        color: white;
-        font-size: 3.6rem;
-        line-height: 1.4
-      }
+    section#register p {
+      color: white;
+      font-size: 3.6rem;
+      line-height: 1.4
+    }
 
-      h2.underline {
-        font-size: 5.6rem;
-        margin: 0;
-        padding-top: 5.0rem;
-        color: #2E81E8;
-        font-weight: bold;
-        position: relative;
-      }
+    h2.underline {
+      font-size: 5.6rem;
+      margin: 0;
+      padding-top: 5.0rem;
+      color: #2E81E8;
+      font-weight: bold;
+      position: relative;
+    }
 
-      h2.underline:after {
-        content: '';
-        background: #2E81E8;
-        width: 15.0rem;
-        bottom: -3.4rem;
-        left: 0;
-        height: 0.5rem;
-        position: absolute;
-      }
+    h2.underline:after {
+      content: '';
+      background: #2E81E8;
+      width: 15.0rem;
+      bottom: -3.4rem;
+      left: 0;
+      height: 0.5rem;
+      position: absolute;
+    }
 
-      p.indent {
-        margin: 0;
-        color: #626A90;
-        font-size: 3.6rem;
-        padding-left: 17.0rem;
-        padding-top: 1.0rem;
-        padding-bottom: 4.0rem;
-        line-height: 1.4
-      }
+    p.indent {
+      margin: 0;
+      color: #626A90;
+      font-size: 3.6rem;
+      padding-left: 17.0rem;
+      padding-top: 1.0rem;
+      padding-bottom: 4.0rem;
+      line-height: 1.4
+    }
 
-      img.responsive {
-        display: block;
-        width: 100%;
-        height: auto;
-      }
+    img.responsive {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
 
-      section#sponsors {
-        text-align: center;
-        padding-top: 4.0rem;
-      }
+    section#sponsors {
+      text-align: center;
+      padding-top: 4.0rem;
+    }
 
-      .sponsor-card {
-        color: #E82E81;
-        font-size: 3.6rem;
-        padding-bottom: 4.0rem;
-        font-weight: bold;
-      }
+    .sponsor-card {
+      color: #E82E81;
+      font-size: 3.6rem;
+      padding-bottom: 4.0rem;
+      font-weight: bold;
+    }
 
-      .sponsor-card img {
-        max-width: 100%;
-      }
+    .sponsor-card img {
+      max-width: 100%;
+    }
 
-      .sponsor-card .sponsor-label {
-        margin-bottom: 2.0rem;
-      }
+    .sponsor-card .sponsor-label {
+      margin-bottom: 2.0rem;
+    }
 
-      section#sponsors .become {
-        border-radius: 2.0rem;
-        max-width: 50.0rem;
-        padding: 4.0rem;
-        margin: auto;
-        background: url('/assets/black.png');
-        background-size: 87px auto;
-      }
+    section#sponsors .become {
+      border-radius: 2.0rem;
+      max-width: 50.0rem;
+      padding: 4.0rem;
+      margin: auto;
+      background: url('/assets/black.png');
+      background-size: 87px auto;
+    }
 
-      section#sponsors .become img {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-      }
+    section#sponsors .become img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
-      section#sponsors .become button {
-        cursor: pointer;
-        margin-top: 3.0rem;
-        height: 7.0rem;
-        border: none;
-        border-radius: 4.6rem;
-        font-size: 2.4rem;
-        color: white;
-        padding: 0 3.0rem;
-        background: #E82E81;
-      }
+    section#sponsors .become button {
+      cursor: pointer;
+      margin-top: 3.0rem;
+      height: 7.0rem;
+      border: none;
+      border-radius: 4.6rem;
+      font-size: 2.4rem;
+      color: white;
+      padding: 0 3.0rem;
+      background: #E82E81;
+    }
 
-      .speaker-container {
-        text-align: justify;
-        padding-top: 6.0rem;
-        position: relative;
-      }
+    .speaker-container {
+      text-align: justify;
+      padding-top: 6.0rem;
+      position: relative;
+    }
 
-      .mod-container {
-        padding-top: 6.0rem;
-      }
+    .mod-container {
+      padding-top: 6.0rem;
+    }
 
-      .mod-container .mod img {
-        border: 3px dashed #2E81E8;
-        margin-right: 2.0rem;
-        width: 22.0rem;
-        float: left;
-      }
-      .mod-container:after {
-        content: "";
-        width: 100%;
-        display: inline-block;
-      }
+    .mod-container .mod img {
+      width: 22.0rem;
+    }
 
-      .speaker-container:after {
-        content: "";
-        width: 100%;
-        display: inline-block;
-      }
+    .mod-container:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
 
-      .speaker-container .speaker {
-        margin: 1.0rem 0;
-        width: 22.0rem;
-        display: inline-block;
-        vertical-align: top;
-        text-align: center;
-      }
+    .speaker-container:after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
 
-      .mod-container .mod h3,
-      .speaker-container .speaker h3 {
-        font-size: 3rem;
-        color: #E82E81;
-      }
+    .speaker-container .speaker {
+      margin: 1.0rem 0;
+      width: 22.0rem;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+    }
 
-      .mod-container .mod p,
-      .speaker-container .speaker p {
-        font-size: 2rem;
-        color: #626A90;
-        margin-bottom: 0;
-      }
+    .mod-container .mod h3,
+    .speaker-container .speaker h3 {
+      font-size: 3rem;
+      color: #E82E81;
+    }
 
-      .speaker-container .speaker img {
-        width: 100%;
-        border: 3px dashed #2E81E8;
-      }
+    .mod-container .mod p,
+    .speaker-container .speaker p {
+      font-size: 2rem;
+      color: #626A90;
+      margin-bottom: 0;
+    }
 
-      .speaker-container .overlay {
-        position: absolute;
-        left: 0;
-        right: 0;
-        padding: 1%;
-        top: 50%;
-        -webkit-transform: skewY(-10deg);
-            -ms-transform: skewY(-10deg);
-                transform: skewY(-10deg);
-        background: #2E81E8;
-        color: white;
-        font-size: 6.4rem;
-        text-align: center;
-        font-weight: bold;
-      }
+    #speakers .image-container {
+      padding: 1rem;
+      background-image: url("/assets/kare.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
 
-      section#venue {
-        position: relative;
-      }
+    #speakers .mod .image-container {
+      float: left;
+      margin-right: 2rem;
+    }
 
-      section#venue .info {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgba(0,0,0,0.5);
-        text-align: center;
-        padding: 1.0rem 0;
-      }
+    .speaker-container .speaker img {
+      width: 100%;
+    }
 
-      section#venue h2 {
-        color: white;
-        margin: 0;
-        font-weight: bold;
-        font-size: 5.6rem;
-      }
+    .speaker-container .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      padding: 1%;
+      top: 50%;
+      -webkit-transform: skewY(-10deg);
+      -ms-transform: skewY(-10deg);
+      transform: skewY(-10deg);
+      background: #2E81E8;
+      color: white;
+      font-size: 6.4rem;
+      text-align: center;
+    }
 
-      section#venue p {
-        margin: 0;
-        color: white;
-        font-size: 2.4rem;
-      }
+    section#venue {
+      position: relative;
+    }
 
-      section#venue a {
-        display: inline-block;
-        margin-top: 1.0rem;
-        height: 7.0rem;
-        text-decoration: none;
-        line-height: 7.0rem;
-        border: 0.2rem solid #E82E81;
-        border-radius: 4.6rem;
-        font-size: 2.4rem;
-        color: white;
-        padding: 0 3.0rem;
-        background: transparent;
-      }
+    section#venue .responsive {
+      object-fit: cover;
+      max-height: 40rem;
+    }
 
-      footer {
-        background: #2E81E8;
-        color: white;
-        font-size: 2.4rem;
-      }
+    section#venue .info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 1.0rem 0;
+    }
 
-      footer .info {
-        text-align: center;
-        padding: 8.0rem 0 1.0rem 0;
-        position: relative;
-        z-index: 10;
-      }
+    section#venue h2 {
+      color: white;
+      margin: 0;
+      font-weight: bold;
+      font-size: 5.6rem;
+    }
 
-      footer .info h2 {
-        color: white;
-        font-weight: bold;
-        font-size: 5.6rem;
-        margin: 1.0rem;
-      }
+    section#venue p {
+      margin: 0;
+      color: white;
+      font-size: 2.4rem;
+    }
 
-      footer .info p {
-        color: white;
-        font-size: 3.6rem;
-        line-height: 1.4;
-        margin: 1.0rem;
-      }
+    section#venue a {
+      display: inline-block;
+      margin-top: 1.0rem;
+      height: 7.0rem;
+      text-decoration: none;
+      line-height: 7.0rem;
+      border: 0.2rem solid #E82E81;
+      border-radius: 4.6rem;
+      font-size: 2.4rem;
+      color: white;
+      padding: 0 3.0rem;
+      background: transparent;
+    }
 
-      footer .responsive {
-        position: absolute;
-      }
+    footer {
+      background: #2E81E8;
+      color: white;
+      font-size: 2.4rem;
+    }
 
-      footer .info a {
-        display: inline-block;
-        margin-top: 1.0rem;
-        height: 7.0rem;
-        text-decoration: none;
-        line-height: 7.0rem;
-        border: 0.2rem solid white;
-        border-radius: 4.6rem;
-        font-size: 2.4rem;
-        color: white;
-        padding: 0 3.0rem;
-        background: transparent;
-      }
+    footer .info {
+      text-align: center;
+      padding: 8.0rem 0 1.0rem 0;
+      position: relative;
+      z-index: 10;
+    }
 
-      span.right {
-        float: right;
-      }
+    footer .info h2 {
+      color: white;
+      font-weight: bold;
+      font-size: 5.6rem;
+      margin: 1.0rem;
+    }
 
-    @media only screen
-      and (max-device-width: 767px) {
+    footer .info p {
+      color: white;
+      font-size: 3.6rem;
+      line-height: 1.4;
+      margin: 1.0rem;
+    }
 
+    footer .responsive {
+      position: absolute;
+    }
+
+    footer .info a {
+      display: inline-block;
+      margin-top: 1.0rem;
+      height: 7.0rem;
+      text-decoration: none;
+      line-height: 7.0rem;
+      border: 0.2rem solid white;
+      border-radius: 4.6rem;
+      font-size: 2.4rem;
+      color: white;
+      padding: 0 3.0rem;
+      background: transparent;
+    }
+
+    span.right {
+      float: right;
+    }
+
+    footer #scrollTop {
+      max-width: 10rem;
+      margin-top: 4rem;
+      margin-left: auto;
+      margin-right: auto;
+      cursor: pointer;
+    }
+
+    @media only screen and (max-device-width: 767px) {
       nav img {
         height: 2rem;
       }
-
       nav a {
         height: 2rem;
         line-height: 2rem;
         margin-left: 0.5rem;
       }
-
       nav {
         font-size: 1rem;
       }
-
       header .top-container {
         background: none;
       }
-
       header .top-container img {
         max-width: 60%;
       }
-
       header h1 {
         font-size: 3rem;
       }
-
       header p {
         padding: 0 1.0rem;
         font-size: 1.6rem;
       }
-
       header .bottom-container {
         padding: 0;
         background: none;
         height: auto;
       }
-
       header .max-width {
         padding: 0.5rem;
       }
-
       section#date p {
         font-size: 3.4rem;
         padding: 2rem;
       }
-
       h2.underline {
         font-size: 3rem;
         padding-top: 0;
       }
-
       h2.underline:after {
         width: 15rem;
         bottom: -1.4rem;
         height: 0.3rem;
       }
-
       p.indent {
         font-size: 1.8rem;
         padding-left: 0;
         padding-top: 2rem;
         padding-bottom: 2.0rem;
       }
-
       section#venue p {
         font-size: 1.8rem;
       }
-
       section#venue h2 {
         font-size: 3rem;
       }
-
       section#venue a {
-          margin-top: 1.0rem;
-          height: 4rem;
-          line-height: 4rem;
-          border-radius: 4rem;
-          font-size: 1.8rem;
+        margin-top: 1.0rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 4rem;
+        font-size: 1.8rem;
       }
-
       section#venue .info {
-          padding: 0;
-          bottom: 0;
+        padding: 0;
+        bottom: 0;
       }
-
+      #speakers .image-container {
+        padding: 0.5rem;
+      }
       .mod-container .mod h3,
       .speaker-container .speaker h3 {
         font-size: 1.8rem;
       }
-
       .mod-container .mod p,
       .speaker-container .speaker p {
         font-size: 1.2rem;
       }
-
       .mod-container .mod img,
       .speaker-container .speaker {
-          width: 13rem;
+        width: 13rem;
       }
-
       .speaker-container .overlay {
-          font-size: 3rem;
+        font-size: 3rem;
       }
-
       .mod-container,
       .speaker-container {
-          padding-top: 3rem;
+        padding-top: 3rem;
       }
-
       section#register h2 {
-          font-size: 3rem;
-          margin: 0;
+        font-size: 3rem;
+        margin: 0;
       }
-
       section#register p {
-          font-size: 1.8rem;
+        font-size: 1.8rem;
       }
-
-      section#register button {
-          margin-top: 1.0rem;
-          height: 4rem;
-          line-height: 4rem;
-          border-radius: 4rem;
-          font-size: 1.8rem;
+      .register-button {
+        margin-top: 1.0rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 4rem;
+        font-size: 1.8rem;
       }
-
+      header .register-button {
+        margin-bottom: 1.0rem;
+      }
       .sponsor-card {
         font-size: 2rem;
       }
-
       .sponsor-card .sponsor-label {
         margin-bottom: 1.8rem;
       }
-
       section#sponsors .become img {
-          width: 200px;
+        width: 200px;
       }
-
       section#sponsors .become button {
-          margin-top: 1.0rem;
-          height: 4rem;
-          line-height: 4rem;
-          border-radius: 4rem;
-          font-size: 1.8rem;
+        margin-top: 1.0rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 4rem;
+        font-size: 1.8rem;
       }
-
       footer img {
-          width: 75px;
+        width: 75px;
       }
-
       footer .info h2 {
-          font-size: 3rem;
-          margin: 1.0rem;
+        font-size: 3rem;
+        margin: 1.0rem;
       }
-
       footer .info p {
-          font-size: 1.8rem;
+        font-size: 1.8rem;
       }
-
       footer .info a {
-          margin-top: 1.0rem;
-          height: 4rem;
-          line-height: 4rem;
-          border-radius: 4rem;
-          font-size: 1.8rem;
+        margin-top: 1.0rem;
+        height: 4rem;
+        line-height: 4rem;
+        border-radius: 4rem;
+        font-size: 1.8rem;
       }
-
       footer {
-          font-size: 1rem;
+        font-size: 1rem;
       }
-
     }
 
-    @media only screen
-      and (min-device-width: 768px)
-      and (max-device-width: 1200px) {
-
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
       header h1 {
         font-size: 6rem;
       }
-
       header p {
         font-size: 2.6rem;
       }
-
       header .bottom-container {
         height: 32vw;
         padding: 0;
       }
-
       section#date p {
         font-size: 6rem;
       }
-
       h2.underline {
         font-size: 5rem;
       }
-
       p.indent {
         font-size: 2.6rem;
       }
-
       section#register h2 {
         font-size: 5rem;
         margin-bottom: 0;
       }
-
       section#register p {
         font-size: 2.6rem;
       }
-
       footer .info h2 {
         font-size: 5rem;
       }
-
       footer .info p {
         font-size: 2.6rem;
       }
-
       footer {
         font-size: 1.8rem;
       }
-
       nav {
         font-size: 1.8rem;
       }
-
     }
     </style>
   </head>
@@ -664,6 +640,7 @@
             networking için harika bir ortam, deneyim alanları
             ve çok daha fazlası Pisano CX Day’de!
           </p>
+          <button id="registerBtn" class="register-button" type="button">Ücretsiz Kayıt</button>
         </div>
       </div>
     </header>
@@ -682,7 +659,7 @@
           Bizce zamanı geldi.
           <br>
           <br>
-          Pisano CX Day’de müşteri deneyimi odaklı ekiplerin fikirlerini paylaşabileceği bir dünya yaratmayı amaçlıyoruz. Her katılımcının kendini geliştirebileceği ve geri döndüğünde günlük iş akışlarına dahil edebileceği fark yaratacak pratikler paylaşmak, konuların derinine inmek, farklı bakış açıları sunmak ve ekosistemimizi iyiye doğru dönüştürmek istiyoruz. Yaratıcı, yenilikçi ve müşteri odaklı bir biçimde, hep birlikte! 
+          Pisano CX Day’de müşteri deneyimi odaklı ekiplerin fikirlerini paylaşabileceği bir dünya yaratmayı amaçlıyoruz. Her katılımcının kendini geliştirebileceği ve geri döndüğünde günlük iş akışlarına dahil edebileceği fark yaratacak pratikler paylaşmak, konuların derinine inmek, farklı bakış açıları sunmak ve ekosistemimizi iyiye doğru dönüştürmek istiyoruz. Yaratıcı, yenilikçi ve müşteri odaklı bir biçimde, hep birlikte!
         </p>
       </div>
     </section>
@@ -704,7 +681,9 @@
         <h2 class="underline">Moderatör</h2>
         <div class="mod-container">
           <div class="mod">
-            <img src="/assets/etemucin.png">
+            <div class="image-container">
+             <img src="/assets/etemucin.png">
+            </div>
             <span>
               <h3>Emel Temuçin</h3>
               <p>Yöneticilik kariyeri boyunca insan, çalışan ve müşteri ihtiyaç ve davranışlarını gözlemleme ve anlamlandırma tutkusu, Emel Temuçin’i nörobilim ve nöropazarlama ile buluşturdu. Çalışmaları ile elde ettiği iş ve özel hayatında sağladığı fayda ve deneyimleri paylaşmak üzere, LeadNeuro’yu kurdu. Emel Temuçin, nöropazarlama konusunda eğitim, danışmanlık ve araştırma hizmetleri vermenin yanısıra, halen dijital kanallar konusunda danışmanlığını sürdürmektedir.</p>
@@ -716,22 +695,30 @@
         <div class="speaker-container">
           <div class="speaker">
             <h3>Doç. Dr. Gresi<br>Sanje</h3>
-            <img src="/assets/gsanje.png">
+            <div class="image-container">
+              <img src="/assets/gsanje.png">
+            </div>
             <p>İstanbul Bilgi Üniversitesi Marka Okulu Direktörü</p>
           </div>
           <div class="speaker">
             <h3>Mustafa<br>Dalcı</h3>
-            <img src="/assets/mdalci.png">
+            <div class="image-container">
+              <img src="/assets/mdalci.png">
+            </div>
             <p>Userspots Kurucusu</p>
           </div>
           <div class="speaker">
             <h3>Sinem<br>Yüksel</h3>
-            <img src="/assets/syuksel.png">
+            <div class="image-container">
+              <img src="/assets/syuksel.png">
+            </div>
             <p>Turkcell Müşteri Deneyimi Direktörü</p>
           </div>
           <div class="speaker">
             <h3>Gökhan<br>Kara</h3>
-            <img src="/assets/gkara.png">
+            <div class="image-container">
+              <img src="/assets/gkara.png">
+            </div>
             <p>Enerjisa Müşteri Deneyimi Müdürü</p>
           </div>
         </div>
@@ -739,32 +726,48 @@
         <div class="speaker-container">
           <div class="overlay">Ağustos'ta Açıklanacak</div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
         </div>
 
         <div class="speaker-container">
           <div class="overlay">Eylül'de Açıklanacak</div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
           <div class="speaker">
-            <img src="/assets/profile.png">
+            <div class="image-container">
+             <img src="/assets/profile.png">
+            </div>
           </div>
         </div>
 
@@ -781,7 +784,7 @@
           <br>
           25 Ekim’de Wyndham-Grand Levent’te buluşalım!
         </p>
-        <button id="registerBtn" type="button">Ücretsiz Kayıt</button>
+        <button id="registerBtn" class="register-button" type="button">Ücretsiz Kayıt</button>
       </div>
     </section>
 
@@ -811,10 +814,11 @@
           tüm müşteri deneyimini kolaylıkla yönetin.
         </p>
         <a href="https://www.pisano.co/tr" target="_blank">Daha Fazla Bilgi →</a>
+        <div id="scrollTop">↑<br>Yukarı</div>
       </div>
-
       <div class="max-width">
-        © 2018 Pisano<span class="right">info@pisano.co</span>
+        © 2018 Pisano
+        <span class="right">info@pisano.co</span>
       </div>
     </footer>
 
@@ -853,6 +857,23 @@
             });
         }, 500);
       };
+
+      function scrollTo(element, to, duration) {
+        if (duration <= 0) return;
+        var difference = to - element.scrollTop;
+        var perTick = difference / duration * 10;
+
+        setTimeout(function() {
+          element.scrollTop = element.scrollTop + perTick;
+          if (element.scrollTop === to) return;
+          scrollTo(element, to, duration - 10);
+        }, 10);
+      }
+
+      document.getElementById("scrollTop").onclick = function() {
+        scrollTo(document.documentElement, 0, 600);
+      };
+
     </script>
   </body>
 </html>
