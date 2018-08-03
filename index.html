@@ -640,7 +640,7 @@
             networking için harika bir ortam, deneyim alanları
             ve çok daha fazlası Pisano CX Day’de!
           </p>
-          <button id="registerBtn" class="register-button" type="button">Ücretsiz Kayıt</button>
+          <button id="registerBtnTop" class="register-button" type="button">Ücretsiz Kayıt</button>
         </div>
       </div>
     </header>
@@ -784,7 +784,7 @@
           <br>
           25 Ekim’de Wyndham-Grand Levent’te buluşalım!
         </p>
-        <button id="registerBtn" class="register-button" type="button">Ücretsiz Kayıt</button>
+        <button id="registerBtnBottom" class="register-button" type="button">Ücretsiz Kayıt</button>
       </div>
     </section>
 
@@ -843,7 +843,10 @@
         }, 500);
       };
 
-      document.getElementById("registerBtn").onclick = function(e) {
+      document.getElementById("registerBtnTop").onclick = registerBtnClickHandler;
+      document.getElementById("registerBtnBottom").onclick = registerBtnClickHandler;
+
+      function registerBtnClickHandler() {
         try {
           PisanoWidget.destroy();
         } catch(e) {}
@@ -856,7 +859,7 @@
               setTimeout(function() { PisanoWidget.open(); }, 500);
             });
         }, 500);
-      };
+      }
 
       function scrollTo(element, to, duration) {
         if (duration <= 0) return;
