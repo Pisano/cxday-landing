@@ -614,6 +614,10 @@
       }
     }
     </style>
+
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/2869844.js"></script>
+    <!-- End of HubSpot Embed Code -->
   </head>
 
   <body>
@@ -828,6 +832,16 @@
       o=i.getElementsByTagName(a)[0];n.src='https://web.pisano.co/scripts/widget/widget.js';
       o.parentNode.insertBefore(n,o)}(window,document,'Pisano','script');
 
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+      }
+
       document.getElementById("sponsorshipBtn").onclick = function(e) {
         try {
           PisanoWidget.destroy();
@@ -851,13 +865,29 @@
           PisanoWidget.destroy();
         } catch(e) {}
 
+        var customerEmail = getParameterByName("email");
+        var customerName = getParameterByName("name") || "";
+        var customerSurname = getParameterByName("surname") || "";
+
         // add widget on next tick
         setTimeout(function() {
           // open new widget
-          PisanoWidget.boot("PSN-c8huehd")
-            .then(function() {
-              setTimeout(function() { PisanoWidget.open(); }, 500);
+          var widget;
+
+          if (customerEmail && customerEmail.length > 0) {
+            widget = PisanoWidget.boot("PSN-ztl7bqt", {
+              customer: {
+                email: customerEmail,
+                name: customerName + " " + customerSurname
+              }
             });
+          } else {
+            widget = PisanoWidget.boot("PSN-c8huehd");
+          }
+
+          widget.then(function() {
+            setTimeout(function() { PisanoWidget.open(); }, 500);
+          });
         }, 500);
       }
 
